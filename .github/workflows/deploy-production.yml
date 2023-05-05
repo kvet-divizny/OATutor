@@ -17,9 +17,9 @@ jobs:
           persist-credentials: false
 
 
-      - run: git submodule set-url "src/content-sources/oatutor_own" https://github.com/kvet-divizny/OATutor-Content
-      - run: git submodule init
-      - run: git submodule update
+      - run: git submodule set-url "src/content-sources/oatutor" https://github.com/kvet-divizny/OATutor-Content
+      - run: git submodule update --init --recursive --remote
+
 
       - name: Save original git author and git email
         run: |
