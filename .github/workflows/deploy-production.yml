@@ -17,7 +17,7 @@ jobs:
           persist-credentials: false
 
 
-      - run: git submodule set-url "src/content-sources/oatutor" https://github.com/kvet-divizny/OATutor-Content/import
+      - run: git submodule set-url "src/content-sources/oatutor" https://github.com/kvet-divizny/OATutor-Content
       - run: git submodule init
       - run: git submodule update
 
